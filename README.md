@@ -29,4 +29,12 @@ g++ snazzle.tab.c lex.yy.c -lfl -o snazzle
 ./snazzle
 ```
 
+###A better grammar.
+The grammar has been improved to atleast look like the specs.Now to run, a run.sh script has been included.
 
+Now:
+```
+./run.sh
+```
+
+runs the lexer-parser, or the compiler on the input in.snazzle
