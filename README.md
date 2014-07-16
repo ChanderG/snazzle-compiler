@@ -46,3 +46,6 @@ Now the instructions are:
 make snazzle
 ./snazzle <name of snazzle file>
 ```
+
+####Line Numbers
+The compiler now gives line number in case the parsing fails. 

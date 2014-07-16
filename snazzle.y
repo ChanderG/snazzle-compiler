@@ -8,6 +8,8 @@ extern "C" int yylex();
 extern "C" int yyparse();
 extern "C" FILE *yyin;
 
+extern int line_no;
+
 void yyerror(const char *s);
 %}
 
@@ -92,7 +94,7 @@ do {
 }
 
 void yyerror(const char *s) {
-cout << "EEK, parse error!  Message: " << s << endl;
+cout << "EEK, parse error on line number:" << line_no << endl << "Message: " << s << endl;
 // might as well halt now:
 exit(-1);
 }
