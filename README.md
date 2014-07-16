@@ -12,5 +12,6 @@ To run the lexer,
 ```
 ./snazzle
 ```
-
 This will recogonize the tokens you have specified.
+
+Now, the lexer automatically takes in the file to be "lexed".
