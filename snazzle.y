@@ -68,12 +68,17 @@ snazzle:
 
 %%
 
-main() {
+main(int argc, char *argv[]) {
+
+if(argc != 2) {
+	cout << "Snazzle compiler usuage: " << endl << "  snazzle <name of snazzle file>" << endl;
+  exit(0);
+}
 // open a file handle to a particular file:
-FILE *myfile = fopen("in.snazzle", "r");
+FILE *myfile = fopen(argv[1], "r");
 // make sure it is valid:
 if (!myfile) {
-	cout << "I can't open in.snazzle"<< endl;
+	cout << "I can't open " << argv[1] << endl;
 	return -1;
 }
 // set flex to read from it instead of defaulting to STDIN:

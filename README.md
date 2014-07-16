@@ -36,5 +36,13 @@ Now:
 ```
 ./run.sh
 ```
-
 runs the lexer-parser, or the compiler on the input in.snazzle
+
+###Made It!
+The snazzle-compiler now has a makefile and takes arguments for compiling.
+
+Now the instructions are:
+```
+make snazzle
+./snazzle <name of snazzle file>
+```
